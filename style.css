@@ -54,7 +54,6 @@ body {
 }
 
 .top__button {
-    font-style: 16px;
     line-height: 26px;
     text-align: center;
     letter-spacing: 0.04em;
@@ -92,12 +91,14 @@ body {
 .project__item {
     position: relative;
     flex-grow: 1;
+    flex-basis: 336px;
 }
 
 .project__parent {
     display: flex;
     justify-content: space-between;
     margin-top: 32px;
+    flex-wrap: wrap;
 }
 
 .project__item_margin {
@@ -127,10 +128,13 @@ body {
 
 .heading {
     font-size: 36px;
-    text-align: center;
     font-weight: 300;
     line-height: 46px;
     letter-spacing: 0.05em;
+}
+
+.project__heading, .wwd__heading {
+    text-align: center;
 }
 
 .heading-mini {
@@ -176,10 +180,11 @@ body {
     justify-content: space-between;
     padding-top: 64px;
     padding-bottom: 64px;
+    flex-wrap: wrap;
 }
 
 .card {
-    width: 359px;
+    flex-basis: 359px;
     padding: 44px 32px;
     box-sizing: border-box;
     box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
@@ -203,19 +208,86 @@ body {
     text-decoration: none;
 }
 
-.footer__text {
-    width: 495px;
+.footer {
+    margin-top: 112px;
+    background: #316099;
 }
 
-.footer__text .heading {
-    width: 340px;
+.footer__top {
+    display: flex;
+    padding-top: 91px;
+    flex-grow: 1;
+    position: relative;
+}
+
+.footer__text {
+    width: 495px;
+    margin-bottom: 96px;
 }
 
 .footer__info {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 64px;
 }
 
+.footer__info_text {
+    display: flex;
+    width: 317px;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    list-style-type: none;
+}
+
+.info_text_margin {
+    margin-bottom: 20px;
+}
+
+.footer__bottom {
+    padding-top: 64px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__heading {
+    width: 340.96px;
+    color: #FFFFFF;
+    margin-bottom: 32px;
+}
+
+.text__footer, .text__bottom {
+    width: 500px;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+
+.text__item {
+    margin-right: 19.5px;
+}
 .main {
     display: flex;
+}
+
+hr {
+    width: 100%;
+}
+
+.footer__button {
+    position: absolute;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    background: #5A98D0;
+    text-decoration: none;
+    padding: 15px 80px;
+    display: inline-block;
+    top: 165px;
+    right: 0;
 }
