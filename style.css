@@ -56,7 +56,7 @@ body {
 }
 
 .top__button {
-    font-style: 16px;
+    font-size: 16px;
     line-height: 26px;
     text-align: center;
     letter-spacing: 0.04em;
@@ -247,10 +247,13 @@ hr {
     opacity: 0.4;
 }
 
+.footer__bottom {
+    padding-top: 64px;
+}
+
 .footer__info {
     display: flex;
     justify-content: space-between;
-    margin-top: 64px;
 }
 
 .footer__list {
@@ -266,19 +269,19 @@ hr {
 }
 
 .footer__list:nth-child(1)::before {
-    content: 'A.';
+    content: '1.';
     display: block;
     margin-right: 16px;
 }
 
 .footer__list:nth-child(2)::before {
-    content: 'T.';
+    content: '2.';
     display: block;
     margin-right: 16px;
 }
 
 .footer__list:nth-child(3)::before {
-    content: 'E.';
+    content: '3.';
     display: block;
     margin-right: 16px;
 }
@@ -290,6 +293,9 @@ hr {
 .footer__copy-text {
     color: #FFFFFF;
     opacity: 0.4;
+}
+.copy-display {
+    display: none;
 }
 
 .main {
@@ -306,9 +312,85 @@ hr {
     .top__info {
         background-position: right 280px;
     }
+
+    .card-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        margin-bottom: 32px;
+    }
+
+    .footer {
+        margin-top: 109px;
+        padding-top: 47px;
+    }
+
+    .footer__top {
+        width: 75%;
+        margin: 0 auto;
+        padding-bottom: 64px;
+    }
+
+    .footer__text {
+        width: 336px;
+    }
+
+    .footer__button {
+        width: 133px;
+        padding: 3px 0;
+    }
+
+    .footer__bottom {
+        width: 75%;
+        margin: 0 auto;
+        padding-top: 64px;
+    }
+    .footer__info {
+        width: 100%;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+
+    .footer__list {
+        margin-right: 0;
+        flex-grow: 0;
+    }
+
+    .footer__list:nth-child(2) {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .footer__list:nth-child(1)::before {
+        margin-right: 45px;
+    }
+    
+    .footer__list:nth-child(2)::before {
+        margin-right: 45px;
+    }
+
+    .footer__list:nth-child(3)::before {
+        margin-right: 45px;
+    }
+
+    .footer__copy {
+        margin-top: 64px;
+    }
+
+     .copy-display {
+        display: inline;
+    }
+
 }
 
 @media (max-width: 667px) {
+    .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
     .header {
         padding-top: 24px;
     }
@@ -345,4 +427,112 @@ hr {
         line-height: 26px;
         padding: 0 8px;
     }
-}
+
+    .heading {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .what-we-do {
+        padding-top: 48px;
+    }
+
+    .card-box {
+        padding-top: 32px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .text_project {
+        width: 100%;
+        margin-bottom: 82px;
+    }
+
+    .project__text {
+        font-size: 16px;
+        line-height: 19px;
+        top: 16px;
+        right: 16px;
+    }
+
+    .project__text_mini {
+        font-size: 16px;
+        top: 16px;
+        left: 16px;
+    }
+
+    .project__parent {
+        flex-direction: column;
+        margin-top: 16px;
+    }
+
+    .project__item_margin {
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+
+    
+    .footer {
+        margin-top: 64px;
+        padding-top: 18px;
+        padding-bottom: 32px;
+    }
+
+    .footer__top {
+        width: 100%;
+        flex-direction: column;
+        margin: 0 auto;
+        padding-bottom: 40px;
+    }
+
+    .footer__text {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .footer__heading {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer__button {
+        width: 108px;
+        padding: 3px 0;
+        margin: 0;
+    }
+
+    .footer__bottom {
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 32px;
+    }
+
+    .footer__list:nth-child(2) {
+        margin-top: 17px;
+        margin-bottom: 17px;
+    }
+
+    .footer__list:nth-child(1)::before {
+        margin-right: 23px;
+    }
+    
+    .footer__list:nth-child(2)::before {
+        margin-right: 23px;
+    }
+
+    .footer__list:nth-child(3)::before {
+        margin-right: 23px;
+    }
+
+    .footer__copy {
+        margin-top: 37px;
+    }
+
+    .footer__copy-text {
+        text-align: center;
+    }
+}   
+
