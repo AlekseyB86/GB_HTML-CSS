@@ -199,6 +199,8 @@ $width_site: 1366px;
 }
 
 .footer {
+    max-width: $width_site;
+    margin: 0 auto;
     background: #316099;
     margin-top: 112px;
     padding-top: 91px;

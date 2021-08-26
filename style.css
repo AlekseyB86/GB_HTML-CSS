@@ -221,6 +221,8 @@
 }
 
 .footer {
+  max-width: 1366px;
+  margin: 0 auto;
   background: #316099;
   margin-top: 112px;
   padding-top: 91px;
