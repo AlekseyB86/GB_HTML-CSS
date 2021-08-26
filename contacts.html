@@ -10,47 +10,59 @@
 </head>
 
 <body>
-    <div class="container">
-        <ul class="header">
-            <li><a href="index.html"><img src="img/logo.svg" alt="logo"></a></li>
-            <li><a href="contacts.html"><img src="img/contacts.svg" alt="contacts"></a></li>
-        </ul>
-    </div>
-    <div class="contacts-header">
+    <nav class="navigate">
         <div class="container">
-            <h2 class="heading-contacts">Contact Us</h2>
-            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, distinctio!</p>
+            <ul class="header">
+                <li><a href="index.html"><img src="img/logo.svg" alt="logo"></a></li>
+                <li><a href="contacts.html"><img src="img/contacts.svg" alt="contacts"></a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="top__contacts">
+        <div class="container">
+            <div class="top__title">
+                <h2 class="heading-contacts">Contact Us</h2>
+                <p class="text__title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet unde minima aperiam eos vitae enim error ullam, quasi ut quibusdam?</p>
+            </div>
         </div>
     </div>
-    <form action="#" class="container main">
-        <div class="contacts-info">
-            <img src="img/01.jpg" alt="350px">
-            <h4 class="heading-mini">Address</h4>
-            <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
-            <h4 class="heading-mini">Phone</h4>
-            <ul>
-                <li>+7(495) 999-99-99</li>
-                <li>+7(495) 999-99-00</li>
-            </ul>
-            <h4 class="heading-mini">Online service</h4>
-            <ul>
-                <li>artlebedev.ru</li>
-                <li>artlebedev@mail.ru</li>
-            </ul>
+    <form action="#" class="main container">
+        <div class="contacts__info">
+            <img class="contacts__info__img" src="img/contacts.png" alt="photo">
+            <div class="contacts__address">
+                <h4 class="contacts__heading">Address</h4>
+                <p class="text contacts__info__address">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+            </div>
+            <div class="contacts__phone">
+                <h4 class="contacts__heading">Phone</h4>
+                <ul>
+                    <li class="text contacts__info__list-phone">+7(495) 999-99-99</li>
+                    <li class="text contacts__info__list-phone">+7(495) 999-99-00</li>
+                </ul>
+            </div>
+            <div class="contacts__links">
+                <h4 class="contacts__heading">Online service</h4>
+                <ul>
+                    <li class="text contacts__info__list-link">www.artlebedev.ru</li>
+                    <li class="text contacts__info__list-link">artlebedev@mail.ru</li>
+                </ul>
+            </div>
         </div>
         <div class="form">
-            <h4 class="heading-mini">Send us message</h4>
-            Full Name: <input class="input-text" type="text" placeholder="Name"><br>
-            Email: <input class="input-text" type="email" placeholder="mail@mail.ru"><br>
-            Message: <br>
-            <textarea class="input-text" cols="30" rows="5"></textarea><br>
-            <button class="button-submit" type="submit">submit</button><br>
+            <h4 class="contacts__heading contacts__heading-mini">Send us message</h4>
+            <p>Full Name</p>   
+            <input class="form__input-text" type="text" placeholder="Your Name">
+            <p>Email</p>    
+            <input class="form__input-text" type="email" placeholder="Your Email">
+            <p>Message</p> 
+            <textarea class="form__input-textarea" placeholder="Your Message"></textarea><br>
+            <button class="form__button-submit" type="submit">submit</button><br>
+        </div>
+        <div class="map">
+            <script type="text/javascript" charset="utf-8" async
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad2ccde71cfeca8403eb984cc21c30da3baff1099fa61b9ff98dbc1d26bc82af2&amp;width=100%&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
         </div>
     </form>
-    <div class="container">
-        <script type="text/javascript" charset="utf-8" async
-            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad2ccde71cfeca8403eb984cc21c30da3baff1099fa61b9ff98dbc1d26bc82af2&amp;width=100%&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
-    </div>
     <div class="footer">
         <div class="container">
             <div class="footer__top">
